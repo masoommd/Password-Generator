@@ -35,9 +35,9 @@ function App() {
   }, [length, numberAllowed, charAllowed, passwordGenerator])
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-700'>
+      <div className='lg:w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-64 text-orange-500 bg-gray-700 md:w-1/6'>
 
-        <h1 className='text-white text-center'>Password Generator</h1>
+        <h1 className='text-white text-center text-xl mb-2'>Password Generator</h1>
         <div className='flex shadow rounded-lg overflow-hidden mb-4'>
           <input type="text" value={password} placeholder='password' className='outline-none w-full py-1 px-3' readOnly ref={passwordRef} />
           <button className='outline-none bg-blue-500 text-white px-3 py-0.5 shrink-0 hover:bg-blue-600 active:bg-blue-700 ' onClick={copyPasswordToClipboard}>Copy</button>
